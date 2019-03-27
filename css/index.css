@@ -1,0 +1,224 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background:url(../img/fondo.png) repeat-x center top;
+    background-color:#E4E4E4;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    /*height:100%;*/
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/*#contenido{ 
+    height:100vh;
+    height: 100%;
+    width: 100%;
+}*/
+
+.contenedor, .head, .dentro, .foo{
+    border-radius: 3px;
+}
+
+.contenedor {
+    /*background: #000;*/
+    width: 85%;
+    margin: 0 auto;
+}
+.contenedor .dentro {
+    background: #C9CCCE;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    text-align:center;
+}
+
+.contenedor .foo {
+    background: #FF3C3D;
+    width: 35%;
+    /*margin-right: auto;*/
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align:center;
+    z-index:10;
+    position:relative;
+    top:-10px;
+    font-size:10px;
+    color:#fff;
+}
+.contenedor .head {
+    background: #00BB81;
+    width: 35%;
+    margin-right: auto;
+    margin-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align:center;
+    z-index:10;
+    position:relative;
+    top:10px;
+    font-size:10px;
+    color:#fff;
+}
+
+.texto{
+    font-size: 110%;
+}
+
+
+#contenido > [data-role=page]{
+    height: 90% !important;
+    position:relative !important;
+ }
+
+.ui-content{
+    margin-bottom: 15%;
+ }
+
+[data-role=footer]{
+    bottom:0; 
+    position:absolute !important; 
+    top: auto !important; 
+    width:100%;
+    text-align: center;
+} 
+
+/* Portrait layout (default) */
+.logIn{
+    position:absolute;
+    top:15%;
+    left:50%;
+    width:300px;
+    margin-left:-150px;
+    height:300px;
+    /*margin-top:-150px;*/
+    /*border:1px solid #808080;*/
+    padding:5px;
+    text-align: center;
+}
+
+.cajaTexto {
+    background-color: #C7C9CC !important;
+}
+
+.logoApp{
+    width:120px;
+}
+
+.footer {
+    text-align: center;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+}
+
+.btnEnviar,.btnEnviar2{
+    background: #07714B;
+    width: 100px;
+    left:50%;
+    margin-left:-50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 10px;
+    position:absolute;
+}
+
+input {
+    text-transform: uppercase;
+    height: 38px;
+    padding: 6px 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.imgBanner{
+    width: 80%;
+}
+
+.opcionMenu{
+    width: 60%;
+    margin-top: 10px;   
+}
+
+.opcionCalendario{
+    margin-top: 8px;
+}
+
+.header{
+    height: 35px;
+    background-color: #F05D59 !important; 
+    font-size: 18px; 
+    color: #ffffff !important;
+    text-align: center;
+    text-shadow: none !important;
+    padding-top: 2%;
+    padding-bottom: 5px !important;
+}
+
+.headerAvisos{
+    height: 35px;
+    background-color: #00B493 !important; 
+    font-size: 18px; 
+    color: #ffffff !important;
+    text-align: center;
+    text-shadow: none !important;
+    padding-top: 2%;
+    padding-bottom: 5px !important;
+}
+
+.colorAvisos{
+    background-color: #00B493 !important; 
+}
+
+.btnBack{
+    /*background-color: #000 !important;*/
+    background-color: transparent !important;
+    border-color: #ddd;
+    color: #fff !important;
+    text-shadow: none !important;
+    padding: 1px 10px 5px 10px;
+}
+
+.colorAvisos{
+    background-color: #00B493 !important;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .logIn{
+        background-position:left center;
+    }
+    .logoApp{
+        width:85px;
+    }
+}
+
+/*@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}*/
