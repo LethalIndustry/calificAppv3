@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gob.mx.cpte.calificacionesSLP" version="3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Calificaciones SLP v2</name>
+<widget id="gob.mx.cpte.calificacionSLP" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Calificaciones SLP v1</name>
     <description>
         Consulta calificaciones a partir del Ciclo Escolar 2013-2014, certificados a partir del Ciclo Escolar 2016-2017, avisos importantes para la comunidad educativa y calendarios del Ciclo Escolar vigente.
     </description>
@@ -14,7 +14,7 @@
 	<splash src="splash.jpg" />
 	
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="26" />
+    <preference name="android-minSdkVersion" value="28" />
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="AutoHideSplashScreen" value="true"/>
 	<preference name="auto-hide-splash-screen" value="true"/>
